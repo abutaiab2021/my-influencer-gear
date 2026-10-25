@@ -29,6 +29,14 @@
 }
 
 
+.btn-primary{
+    background-color: rgba(224, 44, 109, 1);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 41px;
+    border: none;
+}
+
 
 /* menu related styles */
 header{
@@ -39,6 +47,7 @@ header{
 
 .header-container{
    justify-content: space-between; 
+   margin-bottom: 80px;
 }
 
 .menu-heading{
@@ -60,6 +69,35 @@ header{
 
 
 /* banner related styles */
+.banner-container{
+    background-image: url("../images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.banner-container{
+   justify-content: center;
+   align-items: center;
+   gap: 133px;
+}
+
+.banner-content{
+    width: 500px;
+}
+
+.banner-content h2{
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.banner-image img{
+    width: 100%;
+}
+
+.section-description{
+    font-weight: 600;
+    margin-bottom: 16px;
+}
 
 /* client related styles */
 
@@ -73,12 +111,23 @@ header{
 
 /* responsive design for small device */
 @media screen and (max-width:576px) {
-    .header-container,.menu-container{
+    .header-container,
+    .menu-container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 10px;
 
+    }
+    .banner-container{
+      flex-direction: column-reverse;
+      background-size: contain;
+      background-position: top center;
+      margin-bottom: 20px;
+    }
+    .banner-content{
+        text-align: center;
+        width: 400px;
     }
 }
 
@@ -91,5 +140,16 @@ header{
         align-items: center;
         gap: 10px;
 
+    }
+
+    .banner-container{
+      flex-direction: column-reverse;
+      /* background-size: contain; */
+      background-position: top center;
+      margin-bottom: 20px;
+    }
+    .banner-content{
+        text-align: center;
+        width: 400px;
     }
 }
