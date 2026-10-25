@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +10,13 @@
 .poppins-font {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
+  font-style: normal;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
 }
 /* common styles */
@@ -22,6 +31,9 @@
 }
 .text-four-color{
     color: #6C6C6C;
+}
+.rating-num-color{
+    color: #5E6366;
 }
 
 .display-flex{
@@ -112,10 +124,63 @@ header{
 .clients-container{
     grid-template-columns: repeat(7,1fr);
     gap: 10px;
+    margin-bottom: 100px;
 }
 
 /* card related styles */
+.popular-heading{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 28px;
+}
 
+.products{
+    max-width: 1047px;
+    margin: 0 auto;
+}
+.cards-container{
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.cards-container .card{
+    width: 329px;
+    height: 476px;
+    padding: 14px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    /* border: 2px solid salmon; */
+}
+
+.card img{
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+}
+
+.card-title{
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.card-price{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-rating i{
+    color: #FB8200;
+}
+
+.card-description{
+    font-family:"Inter" ;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(120, 120, 133, 1);
+}
 /* feature and product related styles */
 
 /* footer related styles */
@@ -144,10 +209,16 @@ header{
     }
 
     .clients-container{
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
-    justify-items: center;
-}
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .cards-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        justify-items: center;
+    }
 }
 
 /* responsive design for medium device */
@@ -174,8 +245,14 @@ header{
     }
 
     .clients-container{
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
-    justify-items: center;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .cards-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        justify-items: center;
     }
 }
