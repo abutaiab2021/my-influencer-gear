@@ -28,6 +28,10 @@
     display: flex;
 }
 
+.display-grid{
+    display: grid;
+}
+
 
 .btn-primary{
     background-color: rgba(224, 44, 109, 1);
@@ -37,6 +41,10 @@
     border: none;
 }
 
+main>section{
+    max-width: 1110px;
+    margin: 0 auto;
+}
 
 /* menu related styles */
 header{
@@ -70,7 +78,7 @@ header{
 
 /* banner related styles */
 .banner-container{
-    background-image: url("../images/Circle\ design.svg");
+    background-image: url("../images/Circle-design.svg");
     background-repeat: no-repeat;
     background-position: top right;
 }
@@ -78,6 +86,7 @@ header{
    justify-content: center;
    align-items: center;
    gap: 133px;
+   margin-bottom: 70px;
 }
 
 .banner-content{
@@ -100,6 +109,10 @@ header{
 }
 
 /* client related styles */
+.clients-container{
+    grid-template-columns: repeat(7,1fr);
+    gap: 10px;
+}
 
 /* card related styles */
 
@@ -129,6 +142,12 @@ header{
         text-align: center;
         width: 400px;
     }
+
+    .clients-container{
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    justify-items: center;
+}
 }
 
 /* responsive design for medium device */
@@ -151,5 +170,12 @@ header{
     .banner-content{
         text-align: center;
         width: 400px;
+        margin-bottom: 50px;
+    }
+
+    .clients-container{
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    justify-items: center;
     }
 }
