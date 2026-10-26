@@ -142,6 +142,7 @@ header{
 .cards-container{
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
+    margin-bottom: 50px;
 }
 
 .cards-container .card{
@@ -181,7 +182,34 @@ header{
     font-weight: 400;
     color: rgba(120, 120, 133, 1);
 }
+.see-more{
+    color: #E02C6D;
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
 /* feature and product related styles */
+
+.features-product-container{
+    gap: 96px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.features-image img{
+    width: 100%;
+}
+
+.features-content{
+    width: 600px;
+}
+
+.join-now{
+    border-radius: 0px;
+    font-weight: bold;
+    padding: 10px 24px;
+}
 
 /* footer related styles */
 
@@ -197,13 +225,15 @@ header{
         gap: 10px;
 
     }
-    .banner-container{
+    .banner-container,
+    .features-product-container{
       flex-direction: column-reverse;
       background-size: contain;
       background-position: top center;
       margin-bottom: 20px;
     }
-    .banner-content{
+    .banner-content,
+    .features-content{
         text-align: center;
         width: 400px;
     }
@@ -232,13 +262,18 @@ header{
 
     }
 
-    .banner-container{
+    .banner-container
+    {
       flex-direction: column-reverse;
-      /* background-size: contain; */
       background-position: top center;
       margin-bottom: 20px;
     }
-    .banner-content{
+    .features-product-container{
+        gap: 20px;
+        padding: 20px;
+    }
+    .banner-content
+    {
         text-align: center;
         width: 400px;
         margin-bottom: 50px;
