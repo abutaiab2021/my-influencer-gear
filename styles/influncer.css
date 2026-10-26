@@ -212,7 +212,28 @@ header{
 }
 
 /* footer related styles */
-
+footer{
+    background-color: #18181F;
+}
+.footer-content{
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+.footer-heading{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.copy-right,.all-right{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.social-icons i{
+    margin-right: 10px;
+    color: white;
+}
 /* responsive related styles */
 
 /* responsive design for small device */
